@@ -59,12 +59,23 @@ header p {
 }
 
 nav {
-    padding-top: 20px;
+    padding-top: 10px;
     height: 40px;
     background-color: var(--cor5);
     box-shadow: 0px 7px 9px black;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding-top: 15px;
+        height: 100px;
+    }
+
+    nav a {
+        line-height: 46px;
+    }
 }
 
 nav a {
@@ -123,7 +134,7 @@ span {
 div.video {
     background-color: var(--cor3);
     margin: 0px -35px 30px -35px;
-    padding: 20px;
+    padding: 75px;
     padding-bottom: 50%;
     position: relative;
 }
@@ -159,7 +170,7 @@ aside {
 }
 
 aside p {
-    text-indent: 30px;
+    text-align: left;
 }
 
 div#listinha {
@@ -169,6 +180,13 @@ div#listinha {
 ul {
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    div#listinha {
+        font-size: 0.9em;
+        columns: 1;
+    }
 }
 
 li::before {
