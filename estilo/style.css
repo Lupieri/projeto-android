@@ -182,6 +182,10 @@ ul {
     font-weight: bold;
 }
 
+abbr {
+    text-decoration: underline;
+}
+
 @media (max-width: 750px) {
     div#listinha {
         font-size: 0.9em;
